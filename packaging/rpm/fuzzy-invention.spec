@@ -6,7 +6,7 @@ Summary: Package for redborder containing kafka files
 
 License: AGPL 3.0
 URL: https://github.com/redBorder/redborder-kafka
-Source0: %{name}-%{version}.tar.gz
+Source0: %{name}-%{version}-pepe.tar.gz
 
 BuildRequires: systemd
 
