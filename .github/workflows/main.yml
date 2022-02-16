@@ -33,12 +33,17 @@ jobs:
       - name: Run a multi-line script
         run: |
           mkdir -p packaging/rpm/SOURCES
+          echo "First ls"
           ls packaging/rpm/SOURCES
+          echo "end of first ls"
           tar --exclude='.git' --exclude='.gitignore' \
             --exclude='packaging/rpm/pkgs' --exclude='packaging/rpm/SOURCES' \
             -czvf packaging/rpm/SOURCES/${GITHUB_REPOSITORY#*/}-1.0.0.tar.gz \
             --transform="s/./${GITHUB_REPOSITORY#*/}-1.0.0/" ./
-       
+          echo "Second ls"
+          ls packaging/rpm/SOURCES
+          echo "end of second ls"
+          
       - uses: Antikythera/build-rpm@v1
         id: build_rpm
         with:
