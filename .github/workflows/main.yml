@@ -47,7 +47,7 @@ jobs:
       - uses: Antikythera/build-rpm@v1
         id: build_rpm
         with:
-          spec_file: packaging/rpm/redborder-kafka.spec
+          spec_file: packaging/rpm/${GITHUB_REPOSITORY#*/}.spec
           sources: |
             packaging/rpm/SOURCES/fuzzy-invention-1.0.0.tar.gz
           variables: |
