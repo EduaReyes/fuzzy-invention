@@ -35,6 +35,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.     
           
+      - name: Install mock
+        run: sudo apt-get install -y mock
+          
       - name: Check if service file exists
         run: ls ${{ github.workspace }}/resources/systemd/${GITHUB_REPOSITORY#*/}.service
         
