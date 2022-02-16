@@ -51,7 +51,7 @@ jobs:
           sources: |
             packaging/rpm/SOURCES/fuzzy-invention-1.0.0.tar.gz
           variables: |
-            _version=1.0.0
+            __version=1.0.0
         
       
 
