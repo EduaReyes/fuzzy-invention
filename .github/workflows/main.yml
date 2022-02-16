@@ -38,6 +38,8 @@ jobs:
       - name: Install mock
         run: |
           sudo apt-get update -y
+          apt-get upgrade -y 
+          apt-get dist-upgrade -y
           sudo apt-get install -y mock
           
       - name: Check if service file exists
