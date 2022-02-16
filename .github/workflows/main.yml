@@ -33,7 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           mkdir -p packaging/rpm/SOURCES
-          ls packaging/rpm
+          ls packaging/rpm/SOURCES
           tar --exclude='.git' --exclude='.gitignore' \
             --exclude='packaging/rpm/pkgs' --exclude='packaging/rpm/SOURCES' \
             -czvf packaging/rpm/SOURCES/${GITHUB_REPOSITORY#*/}-1.0.0.tar.gz \
