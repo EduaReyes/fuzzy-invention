@@ -37,4 +37,4 @@ jobs:
           ls ${{ github.workspace }}/resources/systemd/${GITHUB_REPOSITORY#*/}.service
           
       - name: Check if file exists
-        run: [ -f ${{ github.workspace }}/resources/systemd/${GITHUB_REPOSITORY#*/}.service ]
+        run: -f ${{ github.workspace }}/resources/systemd/${GITHUB_REPOSITORY#*/}.service
