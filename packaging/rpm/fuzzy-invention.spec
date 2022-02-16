@@ -30,7 +30,7 @@ mkdir -p %{buildroot}/usr/lib/redborder/bin
 #install -D -m 0755 resources/bin/rb_producer.sh %{buildroot}/usr/lib/redborder/bin/rb_producer.sh
 install -D -m 0644 resources/systemd/%{name}.service %{buildroot}/usr/lib/systemd/system/%{name}.service
 #cp resources/scripts/*.rb %{buildroot}/usr/lib/redborder/scripts
-chmod 0755 %{buildroot}/usr/lib/redborder/scripts/*
+#chmod 0755 %{buildroot}/usr/lib/redborder/scripts/*
 
 %files
 #%defattr(0755,root,root)
