@@ -49,7 +49,7 @@ jobs:
         with:
           spec_file: packaging/rpm/redborder-kafka.spec
           sources: |
-            packaging/rpm/SOURCES/${GITHUB_REPOSITORY#*/}-1.0.0.tar.gz
+            packaging/rpm/SOURCES/fuzzy-invention-1.0.0.tar.gz
           variables: |
             _version=1.0.0
         
