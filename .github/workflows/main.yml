@@ -34,4 +34,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          ls ${{ github.workspace }}/resources/systemd/${{ github.repository }}.service
+          ls ${{ github.workspace }}/resources/systemd/${{ github.event.repository.name }}.service
