@@ -35,3 +35,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           ls ${{ github.workspace }}/resources/systemd/${GITHUB_REPOSITORY#*/}.service
+          
+      - name: Check if file exists
+        run: [ -f ${{ github.workspace }}/resources/systemd/${GITHUB_REPOSITORY#*/}.service ]
